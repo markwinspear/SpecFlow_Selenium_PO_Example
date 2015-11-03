@@ -2,7 +2,7 @@
 using SpecFlow_Selenium_PO_New.Pages;
 using OpenQA.Selenium;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-static SpecFlow_Selenium_PO_New.Pages.LoginPage;
+//static SpecFlow_Selenium_PO_New.Pages;
 
 namespace SpecFlow_Selenium_PO_Tests.Acceptance_Tests
 {
@@ -22,10 +22,8 @@ namespace SpecFlow_Selenium_PO_Tests.Acceptance_Tests
         [When]
         public void When_I_login()
         {
-            ScenarioContext.Current.Pending();
-            login.type("tomsmith", username);
-            login.type("SuperSecretPassword!", "password");
-
+            //ScenarioContext.Current.Pending();
+            login.with("tomsmith", "SuperSecretPassword");
         }
         
         [Then]

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using TechTalk.SpecFlow;
+using OpenQA.Selenium.Firefox;
 
 namespace SpecFlow_Selenium_PO_New.Pages
 {
@@ -22,7 +23,7 @@ namespace SpecFlow_Selenium_PO_New.Pages
         public void BeforeScenario()
         {
             //TODO: implement logic that has to run before executing each scenario
-            driver = new ChromeDriver();
+            driver = new FirefoxDriver();
 
         }
 
